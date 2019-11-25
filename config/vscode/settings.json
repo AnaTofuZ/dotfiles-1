@@ -1,0 +1,51 @@
+{
+    "vim.insertModeKeyBindings": [
+        {
+            "before": ["j","j"],
+            "after": ["<Esc>"]
+        }
+    ],
+    "vim.normalModeKeyBindingsNonRecursive": [
+        {
+            "before": ["J"],
+            "after": ["1","0","j"]
+        },
+        {
+            "before": ["K"],
+            "after": ["1","0","k"]
+        }
+    ],
+    "vim.visualModeKeyBindingsNonRecursive": [
+        {
+            "before": [">"],
+            "after": [">","g","v"]
+        },
+        {
+            "before": ["<"],
+            "after": ["<","g","v"]
+        },
+        {
+            "before": ["#"],
+            "after": ["g", "c"]
+        },
+        {
+            "before": ["a", "a"],
+            "after": [],
+            "commands": [
+                {
+                    "command": "codealignment.alignbyequals",
+                    "args": [],
+                }
+            ]
+        }
+    ],
+    "vim.useSystemClipboard": true,
+    "vim.whichwrap": "h,l,<,>,[,]",
+    "editor.fontFamily": "Ricty, Menlo, Monaco, 'Courier New', monospace",
+    "editor.fontSize": 14,
+    "terminal.integrated.fontSize": 14,
+    "editor.minimap.enabled": false,
+    "terminal.integrated.fontFamily": "'Ricty for Powerline', Menlo, Monaco, 'Courier New', monospace",
+    "workbench.colorTheme": "Solarized Dark",
+    "editor.find.seedSearchStringFromSelection": false
+}
